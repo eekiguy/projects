@@ -1,0 +1,23 @@
+print("$$$$$$$ TIP CALCULATOR $$$$$$$")
+
+print("Bill Amount $:")
+bill_amount = float(input())
+
+print("\nTip" + "%" +":")
+tip = float(input())
+
+print("\nSplit the Bill ?:")
+num_ppl = int(input())
+
+
+tip_per_ppl = (bill_amount*tip/100)/num_ppl
+total_per_ppl = bill_amount/num_ppl + tip_per_ppl
+
+print("\nTip Each Person: %.2f" %tip_per_ppl)
+print("Total Bill Person: %.2f"%total_per_ppl)
+
+tip_total = tip_per_ppl*num_ppl
+total = bill_amount + tip_total
+
+print("Tip Total:%.2f"%tip_total)
+print("Total(Bill + Tip): %.2f" %total)
